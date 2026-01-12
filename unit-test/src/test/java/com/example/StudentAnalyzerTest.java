@@ -15,6 +15,7 @@ class StudentAnalyzerTest {
         assertEquals(2, analyzer.countExcellentStudents(
                 Arrays.asList(9.0, 8.5, 7.0, 11.0, -1.0)
         ));
+
         assertEquals(0, analyzer.countExcellentStudents(Collections.emptyList()));
     }
 
