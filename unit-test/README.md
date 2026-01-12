@@ -64,10 +64,9 @@ Các test case đã thực hiện:
     - Trường hợp danh sách rỗng
 
 ### Hình minh họa kết quả test:
-![Kết quả 1](src/images/Screenshot%202026-01-12%20085558.png))  
-![Kết quả 2](src/images/Screenshot%202026-01-12%20085646.png)
-![Kết quả 3](src/images/Screenshot%202026-01-12%20094149.png)
-
+![Screenshot 2026-01-12 085558.png](src/images/Screenshot%202026-01-12%20085558.png)
+![Screenshot 2026-01-12 085646.png](src/images/Screenshot%202026-01-12%20085646.png)
+![Screenshot 2026-01-12 094149.png](src/images/Screenshot%202026-01-12%20094149.png)
 ---
 
 ## 5. GitHub Issues
