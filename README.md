@@ -6,5 +6,3 @@
 Dưới đây là kết quả từ cantunsee.space:
 
 ![Kết quả Cantunsee](Screenshot%202026-01-08%20102436.png)
-
-
