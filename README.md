@@ -108,3 +108,112 @@ git add .
 git commit -m "docs: update README with Cypress report and screenshots"
 git pull
 git push
+
+
+# Báo Cáo Kiểm Thử Hiệu Năng Với JMeter
+
+## 1. Thông Tin Sinh Viên
+- Họ và tên: Trần Đức Việt- MSSV: BIT230450- Môn học: Kiểm thử phần mềm
+- Năm học: 2025 - 2026
+
+---
+
+## 2. Mục Tiêu Kiểm Thử
+
+- Hiểu cách sử dụng Apache JMeter để kiểm thử hiệu năng website.
+- Đánh giá khả năng chịu tải của hệ thống.
+- Phân tích thời gian phản hồi và tỷ lệ lỗi.
+- Xác định điểm yếu về hiệu năng.
+
+---
+
+## 3. Website Được Kiểm Thử
+
+- URL: .......................................
+- Mô tả: Website dùng để kiểm thử hiệu năng.
+
+---
+
+## 4. Công Cụ Sử Dụng
+
+- Apache JMeter phiên bản: 5.6.3
+- Hệ điều hành: Windows 10
+- Máy tính cá nhân
+
+---
+
+## 5. Mô Tả Kịch Bản Kiểm Thử
+
+### 5.1 Thread Group 1 – Kịch Bản Cơ Bản
+- Số người dùng: 10
+- Loop Count: 5
+- Hành vi: Gửi HTTP GET đến trang chủ
+
+### 5.2 Thread Group 2 – Kịch Bản Tải Nặng
+- Số người dùng: 50
+- Ramp-up: 30 giây
+- Hành vi: Truy cập trang chủ và trang con
+
+### 5.3 Thread Group 3 – Kịch Bản Tùy Chỉnh
+- Số người dùng: 20
+- Thời gian chạy: 60 giây
+- Hành vi: Truy cập nhiều trang con
+
+---
+
+## 6. Kết Quả Kiểm Thử
+
+### 6.1 Thống Kê Tổng Quan
+
+- Tổng số request: 7704
+- Thời gian phản hồi trung bình: 2140 ms
+- Tỷ lệ lỗi: 29.15%
+- Throughput: 2.1 request/giây
+
+### 6.2 Ảnh Minh Chứng
+
+Ảnh kết quả Summary Report:
+
+![Summary Report](Screenshot%202026-03-01%20033731.png)
+
+---
+
+## 7. Phân Tích Kết Quả
+
+- Website có thời gian phản hồi trung bình ở mức chấp nhận được.
+- Khi số lượng người dùng tăng, tỷ lệ lỗi cũng tăng.
+- Một số request có thời gian phản hồi cao.
+- Hệ thống chưa tối ưu khi chịu tải lớn.
+
+---
+
+## 8. Đánh Giá Và Đề Xuất
+
+### 8.1 Ưu Điểm
+- Website hoạt động ổn định ở tải thấp.
+- Giao diện dễ sử dụng.
+- Phản hồi nhanh khi ít người dùng.
+
+### 8.2 Hạn Chế
+- Tỷ lệ lỗi cao khi tải nặng.
+- Thời gian phản hồi chưa ổn định.
+- Dễ bị quá tải khi nhiều user.
+
+### 8.3 Đề Xuất Cải Tiến
+- Tối ưu server.
+- Cải thiện hệ thống cache.
+- Nâng cấp phần cứng.
+- Tối ưu database.
+
+---
+
+## 9. Kết Luận
+
+Qua bài kiểm thử hiệu năng bằng JMeter, hệ thống hoạt động tốt ở mức tải thấp và trung bình. Tuy nhiên, khi số lượng người dùng tăng cao, hiệu năng giảm rõ rệt. Cần tối ưu thêm để nâng cao khả năng chịu tải.
+
+---
+
+## 10. Tài Liệu Đính Kèm
+
+- File kịch bản: Summary Report.jmx
+- Ảnh kết quả: Screenshot 2026-03-01 033731.png
